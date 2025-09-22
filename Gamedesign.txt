@@ -1,0 +1,48 @@
+Button Simulator - Game Design Document (Basis)
+
+1. Start
+- De speler spawnt in een simpele kamer/arena.
+- In het midden staat een grote knop (bijvoorbeeld rood, met een lichte gloed).
+
+2. Klikken = Coins verdienen
+- Elke klik op de knop geeft de speler 1 coin.
+- Coins zijn gewoon een getal in de UI (rechtsboven).
+- Je kunt coins later gebruiken in de shop.
+
+3. Shop (upgrades kopen)
+- Met coins koop je upgrades, zoals:
+  - +1 coin per click (nu krijg je 2 per klik).
+  - x2 multiplier (alle coins worden verdubbeld).
+  - Sneller klikken (kortere cooldown).
+- Shop open je via een knop in de UI → venster met knoppen en prijzen.
+
+4. Knop verandert
+- Om het leuk te houden, verandert de knop na bepaalde levels:
+  - 100 coins → knop wordt groter en blauw.
+  - 1.000 coins → knop krijgt particles.
+  - 10.000 coins → knop teleporteert steeds random in de kamer.
+- Zo voelt het alsof je “levelt” en steeds iets nieuws vrijspeelt.
+
+5. Prestige / Rebirth (endgame)
+- Als je bijvoorbeeld 100.000 coins hebt, kan je Prestige doen:
+  - Je coins gaan terug naar 0.
+  - Je krijgt een Prestige point.
+  - Elke Prestige point geeft je +10% meer coins forever.
+- Zo kunnen spelers oneindig doorgaan.
+
+6. UI Layout
+- Midden (onderaan): de grote knop om op te klikken.
+- Rechtsboven: Coins teller + Shop knop.
+- Linksboven: Prestige knop (komt pas als je ver genoeg bent).
+- Bovenmidden: tekst “Level X – Button evolutie naam”.
+
+7. Soorten Coins
+- Start simpel met Coins (goud-icoontje).
+- Later uitbreiden met:
+  - Gems (premium currency, bv. via gamepasses).
+  - Prestige points (zeldzaam, via rebirth).
+
+8. Extra Functie: Parcourtjes voor extra coins
+- Er komt een Teleport UI waarin spelers kunnen kiezen naar welk parcour ze willen gaan.
+- Bij elk parcour kan de speler extra coins verdienen door het parcour uit te spelen.
+- Bij elk parcour staat ook een "Skip parcour" knop, waarbij de speler kan betalen (Robux) om dat parcour direct over te slaan.
