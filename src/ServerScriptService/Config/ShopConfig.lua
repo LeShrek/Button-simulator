@@ -35,14 +35,14 @@ return {
         Icons = {
             Money = "rbxassetid://110700777881144",
             Gems = "rbxassetid://109316434578031",
-            Robux = "rbxassetid://109316434578031"
+            Robux = "rbxassetid://110652555784913"
         }
     },
 
     ["Shop"] = {
         {
             Name = "Item Shop",
-            BackgroundColor = Color3.fromRGB(47, 163, 54),
+            BackgroundColor = Color3.fromRGB(241, 147, 16),
             Items = {
                 {
                     Name = "Test purchase",
@@ -68,7 +68,7 @@ return {
         
         {
             Name = "Gems Shop",
-            BackgroundColor = Color3.fromRGB(148, 1, 150),
+            BackgroundColor = Color3.fromRGB(0, 157, 241),
             Items = {
                 {
                     Name = "+ $500",
@@ -84,7 +84,7 @@ return {
         
         {
             Name = "Robux Shop",
-            BackgroundColor = Color3.fromRGB(5, 98, 148),
+            BackgroundColor = Color3.fromRGB(1, 167, 15),
             Items = {
                 {
                     Name = "+ 50 Gems",

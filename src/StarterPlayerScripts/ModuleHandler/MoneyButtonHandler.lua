@@ -39,7 +39,6 @@ function MoneyButtonHandler:Start()
     GAIN_MONEY_BUTTON.Activated:Connect(fireMoneyButtonPressed)
 
     warn("Add effect: Coin spawn from button and head towards player, the same kinda effect of the german xolbor game")
-    warn("Change some coloring so it fits with the money, gems and robux coloring of the shop")
 end
 
 return MoneyButtonHandler

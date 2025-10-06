@@ -39,11 +39,9 @@ local purchaseItemConnection = nil :: RBXScriptConnection?
 
 -- Local functions
 local function initShop(config)
-    task.spawn(function()
-        for _, currencyIcon in config.Config.Icons do
-            ContentProvider:PreloadAsync({currencyIcon})
-        end
-    end)
+	for _, currencyIcon in config.Config.Icons do
+		ContentProvider:PreloadAsync({ currencyIcon })
+	end
 
 	PREVIEW_EXIT_BUTTON.Activated:Connect(function() 
 		EXIT_BUTTON.Visible = true
@@ -163,8 +161,6 @@ function ShopClient:Init()
 
 	ShopClient.Server.ShopHandler.InitShop.OnClientEvent:Once(initShop)
 	ShopClient.Server.ShopHandler.InitShop:FireServer()
-
-    warn("Robux icon missing")
 end
 
 function ShopClient:Start()
