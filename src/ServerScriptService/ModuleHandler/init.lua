@@ -1,5 +1,6 @@
 local ModuleHandler = {}
 local modules = {}
+local config = {}
 
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -7,6 +8,11 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 function ModuleHandler:Init()
     local remoteFolder = Instance.new("Folder", ReplicatedStorage.Source)
     remoteFolder.Name = "RemoteEvents"
+
+    local configFolder = script.Parent.Config
+    for _, configModule in configFolder:GetChildren() do
+        config[configModule.Name] = require(configModule)
+    end
 
     for _, module in script:GetDescendants() do
         module = require(module)
@@ -55,6 +61,7 @@ function ModuleHandler:CreateModule(moduleInfo: {Name: string, Client: {[string]
     
     local newModule = {}
     if moduleInfo.Client then newModule.Client = moduleInfo.Client end
+    newModule.Config = config
 
     modules[moduleInfo.Name] = newModule
 
